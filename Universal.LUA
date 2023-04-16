@@ -23,19 +23,6 @@ local PlayerSection = Player:NewSection("Player")
         game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
     end)
 
-local SlapBattles = Window:NewTab("SlapBattles")
-local SlapBattlesSection = SlapBattles:NewSection("SlapBattles")
-
-    SlapBattlesSection:NewLabel("You Must Have 250 Kills to Use this!")
-    SlapBattlesSection:NewLabel("And BTW this Can Be Used without the glove itself.")
-    SlapBattlesSection:NewButton("Force", "Use The Force without the cooldown.", function()
-    game:GetService("ReplicatedStorage").TheForce:FireServer()
-end)
-
-    SlapBattlesSection:NewButton("SlapRoyale", "Activates The Slap Royale Script.", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptMakerAI/SlapRoyale-Script-RBLX/main/SlapRoyale.LUA",true))();
-end)
-
     -- UNIVERSAL
 
 local Universal = Window:NewTab("Universal")
